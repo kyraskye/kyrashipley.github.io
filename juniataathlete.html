@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/juniatastyle.css">
+    <link rel="icon" type="image/x-icon" href="laxicon.png">
+    <title>Juniata Experience</title>
+</head>
+<body>
+    <h2>Meet Me!</h2>
+    <img src="media/playing.jpg">
+    <p>I am a sophomore lacrosse player at Juniata College in Pennslyvania. I am the defender in the picture above.
+        I have been playing lacrosse since I was 4 years old. My older sister played and introduced me to the game. 
+        I picked it up with ease and began to love the sport. I began playing club and was interested in playing in college to help with finances.
+        As a first generation student, I found it difficult to turn down the opprotunity to take advantage of my talent. 
+    </p>
+    <p>
+        Learn more!
+        <a href="https://juniatasports.net/sports/wlax/2024-25/bios/shipley_kyra_wpt3?view=bio">See my 2025 Stats!</a>
+    </p>
+
+    <h2>Why Juniata?</h2>
+    <p>
+        When I was initially recruited out of highschool, I did not choose Juniata. I went to a college in North Carolina called University of Mount Olive.
+        Once I arrived on that campus I almost immediately knew it was not the place for me. I entered the transfer portal halfway through my first semester of Freshman year.
+        I knew I wanted to go closer to home, I couldn't keep driving 6 hours every time I wanted to visit home. I knew that I needed a team of best friends. 
+        I wanted to love the people I was around, at I didn't have that where I was. 
+        <br/>
+        The Coach at the time, Tori Quinn, reached out to me and Juniata met every thing I could have hoped for at my past college. 
+        I committed to playing lacrosse at Juniata in the middle of my Freshman year, and arrived in the Spring of 2025. 
+        I played lacrosse that season and knew coming to Juniata was the best thing I could have done. 
+    </p>
+</body>
+
+   <form action="/submit-data" method="post">
+        <h2>Introduce Yourself</h2>
+        <label for="firstname">First Name:</label>
+        <input type="text" id="first" name="firstName" required placeholder="Enter your first name">
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="first" name="lastName" required placeholder="Enter your last name">
+
+
+        <div class="field-group">
+            <label>Gender / Preference:</label>
+            <div>
+                <input type="radio" id="genderMale" name="gender" value="male">
+                <label for="genderMale" style="display: inline; font-weight: normal;">Male</label>
+            </div>
+            <div>
+                <input type="radio" id="genderFemale" name="gender" value="female">
+                <label for="genderFemale" style="display: inline; font-weight: normal;">Female</label>
+            </div>
+            <div>
+                <input type="radio" id="genderOther" name="gender" value="other">
+                <label for="genderOther" style="display: inline; font-weight: normal;">Prefer Not to Say</label>
+            </div>
+        </div>
+
+        <div class="">
+
+        </div>
+
+        <div class="field-group">
+            <label>Have you ever played/ heard of lacrosse?</label>
+            <div>
+                <input type="checkbox" id="heard" name="played" value="heard">
+                <label for="heard" style="display: inline; font-weight: normal;">Heard of it</label>
+            </div>
+            <div>
+                <input type="checkbox" id="noheard" name="played" value="noheard">
+                <label for="noheard" style="display: inline; font-weight: normal;">Never heard of it</label>
+            </div>
+            <div>
+                <input type="checkbox" id="play" name="played" value="play">
+                <label for="play" style="display: inline; font-weight: normal;">I have played</label>
+            </div>
+            <div>
+                <input type="checkbox" id="noplay" name="played" value="noplay">
+                <label for="noplay" style="display: inline; font-weight: normal;">I have never played</label>
+            </div>
+        </div>
+        
+        <div class="button-group">
+            <button type="reset">Clear Form</button>
+            <button type="submit">Submit</button>
+        </div>
+
+    </form>
+</html>
+
+
